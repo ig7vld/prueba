@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+    <script src="https://kit.fontawesome.com/c0e19f9c00.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="avatar.jpg" class="fotoperfil" alt="Foto de perfil">
+            <div class="profile-info">
+                <p>Nombre: John Doe</p>
+                <p>Alias: johndoe123</p>
+                <p>Edad: 30</p>
+            </div>
+        </div>
+        <div class="center-box">
+            <!-- Graficas circulares -->
+            <div class="circle-graph">25%</div>
+            <div class="circle-graph">40%</div>
+            <div class="circle-graph">15%</div>
+        </div>
+        <div class="actions">
+            <p><a href="#">Ver Perfil</a></p>
+            <p><a href="#">Salir</a></p>
+            <p><a href="#">Descargar</a></p>
+        </div>
+    </header>
+    <main>
+        <section class="grid">
+            <div class="audiencia">
+                
+                <div class="bloques grid">
+                    <div class="bloques">
+                        <h2>Audiencia</h2>
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>611,01 K</p>
+                    </div>
+                    <div class="bloques">
+                        <h3>Seguidores Fake</h3>
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>5,33 %</p>
+                    </div>
+                    <div class="bloques">
+                        <h3>Audiencia Real</h3>
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>578,45 K</p>
+                    </div>
+                </div>
+                <div class="bloques">
+                    <p>Distribución por Edad</p>
+                    <div id="edad" style="width: 300px; height: 300px;"></div>
+                </div>
+                <div id="generoEdad">
+                    <div class="bloques">
+                        <p>Distribución por Género</p>
+                        <div id="genero" style="width: 300px; height: 300px;"></div>
+                    </div>
+                    <div class="bloques">
+                        <p>Distribución por País</p>
+                        <div id="pais" style="width: 300px; height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="publicaciones">
+                <div class="bloques">
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Publicaciones</h2>
+                </div>
+                <div class="bloques">
+                    <p>Distribución de publicaciones por poblaciones</p>
+                    <div id="distribucion" style="width: 300px; height: 300px;"></div>
+                </div>
+                <div class="bloques">
+                    <p>Franja horaria de publicaciones</p>
+                    <div id="franja" style="width: 300px; height: 300px;"></div>
+                </div>
+                <div class="bloques">
+                    <h2>Marcas con las que ha trabajado</h2>
+                    <img src="marcas.jpg" class="imgMarcas" alt="Icono Marcas">
+                </div>
+            </div>
+            <div class="desempeno">
+                <div class="bloques">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Desempeño</h2>
+                </div>
+                <div class="bloques">
+                    <p>Audiencia</p>
+                    <p>Alcance</p>
+                </div>
+                <div class="bloques">
+                    <p>Impresiones</p>
+                </div>
+                <div class="bloques">
+                    <p>Reproducciones</p>
+                </div>
+                <div class="bloques">
+                    <p>Engagement</p>
+                </div>
+                <div class="bloques">
+                    <p>Engagement por publicación</p>
+                    <img src="imagen10.jpg" class="image" alt="Imagen Engagement">
+                    <div id="engagement" style="width: 300px; height: 300px;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
